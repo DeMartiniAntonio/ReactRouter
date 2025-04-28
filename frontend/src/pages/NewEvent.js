@@ -1,12 +1,5 @@
-import React from 'react';
-
-function NewEvent() {
-    return (
-        <div>
-            <h1>Create a New Event</h1>
-            {/* Add your form or content here */}
-        </div>
-    );
+function NewEventPage() {
+  return <h1>NewEventPage</h1>;
 }
 
-export default NewEvent;
+export default NewEventPage;

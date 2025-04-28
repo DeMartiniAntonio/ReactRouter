@@ -1,12 +1,5 @@
-import React from 'react';
-
-function EditEvent() {
-    return (
-        <div>
-            <h1>Create a New Event</h1>
-            {/* Add your form or content here */}
-        </div>
-    );
+function EditEventPage() {
+  return <h1>EditEventPage</h1>;
 }
 
-export default EditEvent;
+export default EditEventPage;
