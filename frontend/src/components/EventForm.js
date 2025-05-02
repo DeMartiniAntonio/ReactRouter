@@ -3,6 +3,7 @@ import {
   useNavigate,
   useNavigation,
   useActionData,
+  json,
   redirect
 } from 'react-router-dom';
 
@@ -113,9 +114,7 @@ export async function action({ request, params }) {
   }
 
   if (!response.ok) {
-    throw new Response(JSON.stringify({ message: 'Could not save event.' }), {
-      status: 500,
-    });
+    throw json({ message: 'Could not save event.' }, { status: 500 });
   }
 
   return redirect('/events');
